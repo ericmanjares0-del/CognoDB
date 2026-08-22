@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGraph | CognoDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>🚗 AutoGraph</h1>
+            <p>Automotive Graph Explorer powered by CognoDB</p>
+        </div>
+        <span class="status">● API Connected</span>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Vehicle Explorer</h2>
+
+            <label for="vehicleSelect">Select Vehicle</label>
+
+            <select id="vehicleSelect">
+                <option value="">Loading vehicles...</option>
+            </select>
+        </section>
+
+        <section id="vehicleInfo" class="card">
+            <h2>Vehicle Information</h2>
+            <div id="vehicleDetails">
+                Select a vehicle to view its information.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Components & Sensors</h2>
+            <div id="components">
+                Select a vehicle to view components.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Diagnostic Codes</h2>
+            <div id="diagnostics">
+                Select a vehicle to view diagnostics.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AutoGraph API • Node.js • Express • CognoDB • Neo4j</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
