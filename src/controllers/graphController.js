@@ -28,7 +28,8 @@ async function getAllVehicles(req, res) {
         console.error("Vehicle query error:", error.message);
 
         res.status(500).json({
-            error: "Failed to retrieve vehicles"
+            error: "Failed to retrieve vehicles",
+            details: error.message
         });
     }
 }
